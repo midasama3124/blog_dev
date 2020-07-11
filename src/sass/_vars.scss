@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+
+// Fonts
+$home-cursive-font: 'Dancing Script';
+$home-primary-font: 'Noto Serif';
+$home-secondary-font: 'Mukta';
+$blog-title-font: 'Lobster';
+$blog-content-font: 'Lora';
+$membership-font: 'Poppins';
+$admin-font: 'Lato';
+
+// Colors
+$primary-soft: rgba(43, 48, 58, .7);
+$secondary-soft: rgba(161, 198, 234, .18);
+$tertiary-soft: rgba(215, 218, 229, .4);
+$custom-green: rgba(27, 153, 139, 1);
+$custom-green-soft: rgba(27, 153, 139, .8);
+$blog-background: rgba(215, 232, 186, .1);
+$header-background1: rgba(161, 198, 234, .1);
+$header-background2: rgba(215, 218, 229, .5);
+$header-background2-soft: rgba(215, 218, 229, .1);
+$membership-white: #f3f3f3;
+$membership-darkblue: #1b1b32;
+$membership-darkblue-alpha: rgba(27, 27, 50, 0.8);
+$membership-green: rgba(55, 175, 101, 1);
+$membership-green-soft: rgba(55, 175, 101, .5);
+$membership-purple: rgba(181, 68, 110, 1);
+$membership-purple-soft: rgba(181, 68, 110, .5);
+$admin-blue: #3498DB;
+
+// Dimensions
+$post-header-height: 95vh;
