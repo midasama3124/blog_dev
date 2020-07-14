@@ -11,7 +11,7 @@
     margin: 0;
 }
 
-.like-button {
+.media-button {
     display: flex;
     flex: row;
     justify-content: center;
@@ -24,7 +24,7 @@
     }
 }
 
-.like-button-icon:hover {
+.media-button-icon:hover {
     color: $primary-soft;
     cursor: pointer;
 }
@@ -126,4 +126,40 @@
         padding-left: .8em;
         padding-right: .8em;
     }
+}
+
+/* Comment list */
+
+.g-height-50 {
+    height: 50px;
+}
+
+.g-width-50 {
+    width: 50px !important;
+}
+
+@media (min-width: 0){
+    .g-pa-30 {
+        padding: 2.14286rem !important;
+    }
+}
+
+.g-bg-secondary {
+    background-color: #fafafa !important;
+}
+
+.u-shadow-v18 {
+    box-shadow: 0 5px 10px -6px rgba(0, 0, 0, 0.15);
+}
+
+.g-color-gray-dark-v4 {
+    color: #777 !important;
+}
+
+.g-font-size-12 {
+    font-size: 0.85714rem !important;
+}
+
+.media-comment {
+    margin-top:20px
 }

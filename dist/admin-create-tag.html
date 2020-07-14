@@ -1,4 +1,4 @@
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -39,39 +39,34 @@
     
    <!-- Admin content -->
    <section class="admin-main">
-      <div class="hipsum">
-         <div class="jumbotron">
-            <h1 id="hello,-world!">Hola, First Name<a class="anchorjs-link" href="#hello,-world!"><span class="anchorjs-icon"></span></a></h1>
-            <p>Esta página está destinada a la administración de tu blog. Aquí podrás crear y editar los posts y los privilegios de tus usuarios, entre otras cosas.</p>
-            <p><a class="btn btn-secondary" href="#" role="button">Crear nuevo post</a></p>
-         </div>
-         <h4>Administradores</h4>
-         <table class="table table-bordered table-striped table-responsive-sm">
-            <thead class="thead-light">
-            <tr>
-               <th>Email</th>
-               <th>Nombre(s)</th>
-               <th>Apellido(s)</th>
-               <th>Último Ingreso</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-               <th scope="row">angelammanchola@gmail.com</th>
-               <td>Ángela</td>
-               <td>Sánchez Manchola</td>
-               <td>2020-01-19 12:23:07</td>
-            </tr>
-            <tr>
-               <th scope="row">midasama3124@gmail.com</th>
-               <td>Miguel</td>
-               <td>Manchola</td>
-               <td>2020-05-30 03:14:15</td>
-            </tr>
-            </tbody>
-         </table>
-         <p>Puedes otorgar permisos de administración a usuarios ya registrados accediendo a la sección de <a href="#" class="admin-hyperlink">Usuarios</a>.</p>
-      </div>
+    <form class="needs-validation" novalidate>
+        <h3 class="text-center"><i class="fa fa-tag bigger-icon"></i> Nuevo Tag</h3>
+        <div class="form-group">
+            <label for="tag-title">Título</label>
+            <input type="text" class="form-control" id="tag-title" placeholder="Ingrese el título del tag" required>
+            <div class="invalid-feedback">
+               Hace falta un título
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="tag-metatitle">Metatítulo</label>
+            <input type="text" class="form-control" id="tag-metatitle" placeholder="Ingrese el metatítulo del tag">
+        </div>
+        <div class="form-group">
+            <label for="tag-slug">URL</label>
+            <input type="text" class="form-control" id="tag-slug" placeholder="Ingrese el URL del tag" required>
+            <div class="invalid-feedback">
+               Hace falta un URL
+            </div>
+        </div>
+        <div class="form-group">
+          <label for="tag-content">Contenido</label>
+          <textarea class="form-control admin-textarea" id="tag-content" rows="3" placeholder="Ingrese contenido que aparecerá como descripción de los posts que contiene este tag"></textarea>
+        </div>
+        <div class="row justify-content-center">
+            <button type="submit" class="btn-lg btn-secondary">Guardar</button>
+        </div>
+      </form>
    </section>
     
   <script src="/js/app.js"></script>

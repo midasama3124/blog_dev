@@ -1,0 +1,106 @@
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Bellas Palabras - Admin Website</title>
+   <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body class="admin-body">
+   <!-- Admin header -->
+   <header class="admin-header">
+      <a href="#" id="menu-action">
+         <i class="fa fa-bars"></i>
+         <span>Cerrar</span>
+      </a>
+      <div class="row justify-content-between px-3">
+         <div class="col-xs-6 logo">
+            Administración
+         </div>
+         <div class="col-xs-6 logo">
+            <a href="#">Con bellas palabras</a>
+         </div>
+      </div>
+   </header>
+
+   <!-- Admin sidebar -->
+   <div class="admin-sidebar">
+      <ul>
+         <li><a href="#"><i class="fa fa-desktop sidebar-icon"></i><span>Inicio</span></a></li>
+         <li><a href="#"><i class="fa fa-book sidebar-icon"></i><span>Posts</span></a></li>
+         <li><a href="#"><i class="fa fa-puzzle-piece sidebar-icon"></i><span>Categorías</span></a></li>
+         <li><a href="#"><i class="fa fa-tags sidebar-icon"></i><span>Tags</span></a></li>
+         <li><a href="#"><i class="far fa-images sidebar-icon"></i><span>Imágenes</span></a></li>
+         <li><a href="#"><i class="fas fa-users sidebar-icon"></i><span>Usuarios</span></a></li>
+      </ul>
+   </div>
+
+   <!-- Admin content -->
+   <section class="admin-main">
+      <form class="needs-validation" novalidate>
+         <h3 class="text-center"><i class="fa fa-book bigger-icon"></i> Nuevo Post</h3>
+         <div class="form-group">
+            <label for="post-title">Título</label>
+            <input type="text" class="form-control" id="post-title" placeholder="Ingrese el título del post" required>
+            <div class="invalid-feedback">
+               Hace falta un título
+            </div>
+         </div>
+         <div class="form-group">
+            <label for="post-metatitle">Metatítulo</label>
+            <input type="text" class="form-control" id="post-metatitle" placeholder="Ingrese el metatítulo del post">
+         </div>
+         <div class="form-group">
+            <label for="post-slug">URL</label>
+            <input type="text" class="form-control" id="post-slug" placeholder="Ingrese el URL del post" required>
+            <div class="invalid-feedback">
+               Hace falta un URL
+            </div>
+         </div>
+         <div class="form-group">
+            <label for="post-category">Categoría</label>
+            <select class="selectpicker form-control" id="post-category" data-live-search="true"
+               data-style="btn-tertiary" title="Escoje una categoría">
+               <option value="category-slug1">Comida</option>
+               <option value="category-slug2">Familia</option>
+               <option value="category-slug3">Paternidad</option>
+               <option value="category-slug4">Viajes</option>
+            </select>
+         </div>
+         <div class="form-group">
+            <label for="post-tags">Tag(s)</label>
+            <select class="selectpicker form-control" multiple id="post-tags" data-live-search="true"
+               data-style="btn-tertiary" title="Escoje uno o más tags">
+               <option value="tag-slug1">Emocionante</option>
+               <option value="tag-slug2">Fin de Semana</option>
+               <option value="tag-slug3">Loco</option>
+               <option value="tag-slug4">Enamorado</option>
+            </select>
+         </div>
+         <div class="form-group">
+            <label for="post-parent">Post padre (Si aplica)</label>
+            <select class="selectpicker form-control" id="post-parent" data-live-search="true" data-style="btn-tertiary"
+               title="Escoje un post padre">
+               <option value="post-slug1">Una nueva aventura</option>
+               <option value="post-slug2">Creciendo juntos</option>
+               <option value="post-slug3">¿Cómo empezar un nuevo hobby?</option>
+               <option value="post-slug4">¿Qué tal es esto?</option>
+            </select>
+         </div>
+         <div class="form-group">
+            <label for="post-content">Contenido</label>
+            <textarea class="form-control admin-textarea" id="post-content" rows="3"
+               placeholder="Ingrese contenido que aparecerá en el post en formato markdown"></textarea>
+         </div>
+         <div class="row justify-content-center">
+            <button type="submit" class="btn-lg btn-secondary">Guardar</button>
+         </div>
+      </form>
+   </section>
+
+   <script src="/js/app.js"></script>
+</body>
+
+</html>
