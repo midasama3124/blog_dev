@@ -9,33 +9,8 @@
 </head>
 
 <body class="admin-body">
-   <!-- Admin header -->
-   <header class="admin-header">
-      <a href="#" id="menu-action">
-         <i class="fa fa-bars"></i>
-         <span>Cerrar</span>
-      </a>
-      <div class="row justify-content-between px-3">
-         <div class="col-xs-6 logo">
-            Administración
-         </div>
-         <div class="col-xs-6 logo">
-            <a href="#">Con bellas palabras</a>
-         </div>
-      </div>
-   </header>
-
    <!-- Admin sidebar -->
-   <div class="admin-sidebar">
-      <ul>
-         <li><a href="#"><i class="fa fa-desktop sidebar-icon"></i><span>Inicio</span></a></li>
-         <li><a href="#"><i class="fa fa-book sidebar-icon"></i><span>Posts</span></a></li>
-         <li><a href="#"><i class="fa fa-puzzle-piece sidebar-icon"></i><span>Categorías</span></a></li>
-         <li><a href="#"><i class="fa fa-tags sidebar-icon"></i><span>Tags</span></a></li>
-         <li><a href="#"><i class="far fa-images sidebar-icon"></i><span>Imágenes</span></a></li>
-         <li><a href="#"><i class="fas fa-users sidebar-icon"></i><span>Usuarios</span></a></li>
-      </ul>
-   </div>
+   <div id="admin-sidebar"></div>
 
    <!-- Admin content -->
    <section class="admin-main">
@@ -45,7 +20,7 @@
             <h2 id="hello,-world!">Hola, First Name<a class="anchorjs-link" href="#hello,-world!"><span
                      class="anchorjs-icon"></span></a></h2>
             <p>Esta página está destinada a la creación y edición de tus tags.</p>
-            <p><a class="btn btn-secondary" href="#" role="button">Crear nuevo tag</a></p>
+            <p><a class="btn btn-secondary" href="admin-create-tag.html" role="button">Crear nuevo tag</a></p>
          </div>
 
          <table id="sorting-table" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
@@ -123,7 +98,7 @@
             </tfoot>
          </table>
 
-         <p class="pt-4">Puedes agregar estos tags a posts ya registrados accediendo a la sección de <a href="#"
+         <p class="pt-4">Puedes agregar estos tags a posts ya registrados accediendo a la sección de <a href="admin-post.html"
                class="admin-hyperlink">Posts</a>.</p>
       </div>
    </section>

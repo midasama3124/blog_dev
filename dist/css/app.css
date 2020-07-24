@@ -12389,7 +12389,6 @@ readers do not read off random characters that represent icons */
     margin: 0 .6em; }
 
 .media-button-icon:hover {
-  color: rgba(43, 48, 58, 0.7);
   cursor: pointer; }
 
 .post-section {
@@ -12443,7 +12442,7 @@ readers do not read off random characters that represent icons */
   .post-content {
     padding: 1.5em 2em; } }
 
-.post-img {
+.post-text img {
   display: block;
   margin-left: auto;
   margin-right: auto;

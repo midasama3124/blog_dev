@@ -16,7 +16,6 @@ export function truncateText(selector, maxLength) {
     return oldText;
   });
 }
-truncateText('.card-title', 20);
 truncateText('.card-text', 150);
 truncateText('.truncated-text', 15);
 
@@ -64,6 +63,7 @@ function handleToggleClick(event) {
 $(function () {
   $("#navbar-placeholder").load("navbar.html");
   $("#footer-placeholder").load("footer.html");
+  $("#admin-sidebar").load("admin-sidebar.html");
 });
 
 /* Custom form behavior */
