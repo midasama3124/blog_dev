@@ -162,3 +162,14 @@
 .media-comment {
     margin-top:20px
 }
+
+.comment-text > a {
+    color: $custom-green-soft;
+    text-decoration: underline;
+}
+
+.comment-text > a:hover {
+    color: $secondary;
+    text-decoration: underline;
+    cursor: pointer;
+}

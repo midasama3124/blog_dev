@@ -37,22 +37,28 @@
          <div class="form-group">
             <label for="post-category">Categoría</label>
             <select class="selectpicker form-control" id="post-category" data-live-search="true"
-               data-style="btn-tertiary" title="Escoje una categoría">
+               data-style="btn-tertiary" title="Escoje una categoría" required>
                <option value="category-slug1">Comida</option>
                <option value="category-slug2">Familia</option>
                <option value="category-slug3">Paternidad</option>
                <option value="category-slug4">Viajes</option>
             </select>
          </div>
+         <div class="invalid-feedback" id="error-msg">
+            Hace falta una categoría
+         </div>
          <div class="form-group">
             <label for="post-tags">Tag(s)</label>
             <select class="selectpicker form-control" multiple id="post-tags" data-live-search="true"
-               data-style="btn-tertiary" title="Escoje uno o más tags">
+               data-style="btn-tertiary" title="Escoje uno o más tags" required>
                <option value="tag-slug1">Emocionante</option>
                <option value="tag-slug2">Fin de Semana</option>
                <option value="tag-slug3">Loco</option>
                <option value="tag-slug4">Enamorado</option>
             </select>
+            <div class="invalid-feedback error-msg">
+               Hace falta al menos un tag
+            </div>
          </div>
          <div class="form-group">
             <label for="post-parent">Post padre (Si aplica)</label>

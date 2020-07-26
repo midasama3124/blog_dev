@@ -175,3 +175,44 @@ $(document).ready(function () {
     });
   }
 })(window, document);
+
+/* Toggle comment truncation */
+var ReadMore = (function() {
+  function ReadMore(limit, readMoreContainerElementSelector) {
+    this.limit = limit;
+    this.readMoreContainerElementSelector = readMoreContainerElementSelector;
+    this.isFullTextShown = false;
+    this.initializeReadMore();
+  }
+  ReadMore.prototype.initializeReadMore = function() {
+    this.fullText = document.querySelector(this.readMoreContainerElementSelector + " .read-more-text").innerHTML;
+    if (this.fullText.length > this.limit) {
+      this.truncatedText = this.fullText.substr(0, this.limit) + ' ...';
+      this.truncated = true;
+    } else {
+      this.truncated = false;
+    }
+    var that = this;
+    document.querySelector(this.readMoreContainerElementSelector + " .read-more-btn").addEventListener("click", function() {
+      that.performToogle();
+    });
+    this.performToogle();
+  };
+  ReadMore.prototype.performToogle = function() {
+    var textToDisplay = "";
+    var buttonText = "";
+    if (this.truncated) {
+      this.isFullTextShown ? (textToDisplay = this.fullText, buttonText = "Leer menos" ): (textToDisplay = this.truncatedText, buttonText = "Leer más");
+      this.isFullTextShown = !this.isFullTextShown;
+      document.querySelector(this.readMoreContainerElementSelector + " .read-more-text").innerHTML = textToDisplay;
+      document.querySelector(this.readMoreContainerElementSelector + " .read-more-btn").innerHTML = buttonText;
+    }
+  };
+  return ReadMore;
+}());
+
+// Initiliaze truncation toggle for every container matching comment-text class
+$('.comment-text').each(function(i, obj) {
+  console.log(`Toggling truncation of #${this.id}`)
+  var readmore = new ReadMore(250, `#${this.id}`);
+});
