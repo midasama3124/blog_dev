@@ -12304,7 +12304,7 @@ readers do not read off random characters that represent icons */
 .post-header {
   width: 100%;
   min-height: 95vh;
-  background-image: url(/image/post_background3.jpg);
+  background-image: url(/image/post_background.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; }
@@ -12317,6 +12317,28 @@ readers do not read off random characters that represent icons */
   top: 0;
   left: 0;
   background-image: linear-gradient(60deg, rgba(161, 198, 234, 0.1), rgba(215, 218, 229, 0.5)); }
+
+.category-tag-header {
+  width: 100%;
+  min-height: 95vh;
+  background-image: url(/image/category-tag-background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+.category-tag-header:before {
+  content: '';
+  width: 100%;
+  min-height: 95vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(60deg, rgba(161, 198, 234, 0.1), rgba(215, 218, 229, 0.5)); }
+
+.category-tag-header h1 {
+  font-family: "Dancing Script";
+  font-size: 4em;
+  font-weight: 900; }
 
 .post-text-header {
   min-height: 95vh;
