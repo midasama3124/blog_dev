@@ -54,6 +54,13 @@
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
 }
 
+.member-success-msg {
+  font-size: 1.125rem;
+  color: $membership-green;
+  font-weight: 800;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
 .member-title,
 .member-description {
   margin-top: 0;
@@ -175,4 +182,17 @@ label, .label-alone {
   .signup-btn {
     margin-top: 1.25rem;
   }
+}
+
+.forgot-password {
+  color: $membership-purple
+}
+
+.forgot-password:hover {
+  color: $membership-purple-soft
+}
+
+.return-btn {
+  position: absolute;
+  color: $membership-white;
 }

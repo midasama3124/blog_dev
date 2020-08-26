@@ -12704,6 +12704,14 @@ readers do not read off random characters that represent icons */
   float: right;
   text-align: right; }
 
+code {
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border: 1px solid #BCBEC0;
+  padding: 2px;
+  font: 12px Monaco,Consolas,"Andale  Mono","DejaVu Sans Mono",monospace; }
+
 *,
 *::before,
 *::after {
@@ -12746,6 +12754,12 @@ readers do not read off random characters that represent icons */
 .member-action-msg {
   font-size: 1.125rem;
   color: #b5446e;
+  font-weight: 800;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4); }
+
+.member-success-msg {
+  font-size: 1.125rem;
+  color: #37af65;
   font-weight: 800;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4); }
 
@@ -12846,6 +12860,16 @@ label, .label-alone {
 @media (max-width: 426px) {
   .signup-btn {
     margin-top: 1.25rem; } }
+
+.forgot-password {
+  color: #b5446e; }
+
+.forgot-password:hover {
+  color: rgba(181, 68, 110, 0.5); }
+
+.return-btn {
+  position: absolute;
+  color: #f3f3f3; }
 
 html {
   font-size: 100%;
