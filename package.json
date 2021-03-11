@@ -19,7 +19,7 @@
     "autoprefixer": "^9.8.0",
     "babel": "^6.23.0",
     "css-loader": "^3.5.3",
-    "elliptic": "^6.5.3",
+    "elliptic": "^6.5.4",
     "fibers": "^4.0.3",
     "file-loader": "^4.3.0",
     "lodash": "^4.17.19",
